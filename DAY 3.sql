@@ -10,7 +10,6 @@ select first_name, last_name, store_id
 from customer
 where store_id = 1 OR last_name = 'DAVIS';
 
-
 -- NOT: Write a query to find all films that are NOT rated 'NC-17'.
 select title, rating 
 from film
