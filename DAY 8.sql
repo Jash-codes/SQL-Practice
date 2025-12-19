@@ -14,11 +14,11 @@ inner join city on address.city_id = city.city_id;
 
 -- -- Filtering a Join: Write a query to find the first_name and last_name of all 
 -- -- actors who have appeared in the film "AFRICAN EGG".
--- select actor.first_name, actor.last_name
--- from actor
--- inner join film_actor on actor.actor_id = film_actor.actor_id
--- inner join film on film_actor.film_id = film.film_id
--- where film.title = 'african egg';
+select actor.first_name, actor.last_name
+from actor
+inner join film_actor on actor.actor_id = film_actor.actor_id
+inner join film on film_actor.film_id = film.film_id
+where film.title = 'african egg';
 
 
 -- -- The "Ambiguous Column" Trap: Try to join staff and payment. Select first_name, 
