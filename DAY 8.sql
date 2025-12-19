@@ -23,7 +23,7 @@ where film.title = 'african egg';
 
 -- -- The "Ambiguous Column" Trap: Try to join staff and payment. Select first_name, 
 -- -- last_name, and amount.
--- select staff.first_name, staff.last_name,payment.amount
--- from staff
--- inner join payment on staff.staff_id = payment.staff_id;
+select staff.first_name, staff.last_name,payment.amount
+from staff
+inner join payment on staff.staff_id = payment.staff_id;
 
