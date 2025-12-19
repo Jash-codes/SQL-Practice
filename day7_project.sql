@@ -66,7 +66,8 @@ GROUP BY DATE(payment_date);
 -- The "R" Rated Report: Find the special_features categories. Only consider movies rated 'R'. 
 -- Group by special_features. Only show categories that have more than 10 movies.
 
-select special_features,rating 
+select special_features,rating,count(film_id) as movie_count
 from film 
+where rating = 'R'
 group by special_features
-having
+having movie_count > 10;
